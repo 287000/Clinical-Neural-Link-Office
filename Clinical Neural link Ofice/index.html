@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinical Neural Link | Office</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Supabase JS Client library -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <!-- PWA Manifest & Meta Tags -->
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0284c7">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="CNL Office">
+<link rel="apple-touch-icon" href="/icons/icon-192.png">
+</head>
+<body class="text-white font-sans antialiased min-h-screen selection:bg-white/30 selection:text-white">
+
+    <!-- Primary Dynamic Viewport Shell with Green Field Background -->
+    <main id="app-viewport" class="w-full h-full min-h-screen flex items-center justify-center p-4 sm:p-6 bg-cover bg-center bg-no-repeat" style="background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1920&auto=format&fit=crop');"></main>
+
+    <!-- Supabase Client Initialization -->
+    <script>
+      // Fixed: Removed /rest/v1/ from the base URL
+      const SUPABASE_URL = "https://ihdyqrjanmtivpgfxcxv.supabase.co"; 
+      const SUPABASE_ANON_KEY = "sb_publishable_pBlvSzM6BAnJYJMNlBT_3Q_rIUp-nCG"; 
+
+      if (window.supabase) {
+        window.supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+      }
+    </script>
+
+    <!-- Application JavaScript Entry Point -->
+    <script src="login.js"></script>
+    <script src="activeregisterrow.js"></script>
+    <script src="monthlyledger.js"></script>
+</body>
+</html>

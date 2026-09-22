@@ -1,0 +1,36 @@
+{
+  "short_name": "CNL Office",
+  "name": "Clinical Neural Link Office",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#030712",
+  "theme_color": "#0284c7",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone", "minimal-ui"],
+  "orientation": "landscape",
+  "categories": ["productivity", "medical", "business"],
+  "description": "Executive Workspace and Assessment Management System for Clinical Neural Link.",
+  "shortcuts": [
+    {
+      "name": "Monthly Ledger",
+      "short_name": "Ledger",
+      "description": "Open Executive Monthly Ledger",
+      "url": "/?view=ledger",
+      "icons": [{ "src": "/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

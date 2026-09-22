@@ -212,8 +212,8 @@ window.renderOfficeDashboard = function() {
     viewport.innerHTML = `
         <div id="dashboard-shell" class="w-full flex-1 flex flex-col animate-in fade-in duration-300">
             
-            <!-- Navigation Header (Added pr-16 sm:pr-20 to clear desktop window controls) -->
-            <header class="w-full bg-[#050b18] border-b border-blue-950/80 pl-6 sm:pl-10 pr-16 sm:pr-20 py-4 shadow-xl shadow-blue-950/20 flex items-center justify-between gap-4 z-20 sticky top-0">
+            <!-- Navigation Header -->
+            <header class="w-full bg-[#050b18] border-b border-blue-950/80 px-6 sm:px-10 py-4 shadow-xl shadow-blue-950/20 flex items-center justify-between gap-4 z-20 sticky top-0">
                 <div class="flex items-center space-x-3">
                     <div class="w-12 h-12 bg-blue-600/20 border border-blue-500/30 rounded-xl flex items-center justify-center text-blue-400 shadow-md shadow-blue-950/50">
                         <i data-lucide="building-2" class="w-6 h-6"></i>
@@ -226,10 +226,11 @@ window.renderOfficeDashboard = function() {
 
                 <div class="flex-1"></div>
 
+                <!-- Pushed down with mt-3 to clear the top title bar line -->
                 <button type="button" onclick="window.handleOfficeLogout()" 
                     title="Logout"
                     aria-label="Logout"
-                    class="w-11 h-11 bg-blue-950/60 hover:bg-rose-950/60 text-blue-200 hover:text-rose-300 border border-blue-800/50 hover:border-rose-800/60 rounded-xl flex items-center justify-center transition cursor-pointer active:scale-95 shadow-sm">
+                    class="mt-3 w-11 h-11 bg-blue-950/60 hover:bg-rose-950/60 text-blue-200 hover:text-rose-300 border border-blue-800/50 hover:border-rose-800/60 rounded-xl flex items-center justify-center transition cursor-pointer active:scale-95 shadow-sm">
                     <i data-lucide="log-out" class="w-5 h-5"></i>
                 </button>
             </header>
